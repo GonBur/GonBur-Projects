@@ -86,3 +86,67 @@ footer >p{
     font-size: 1.5rem;
 }
 
+
+/*  MODO TABLET */
+@media (min-width:767px) and (max-width:1023px){
+
+    /* CABECERA (HEADER) */
+    header >h1{
+        font-size: 6rem;
+    }
+
+    /* SECCION CAMBIO MODO CON MUSICA(SECTION) */
+    /* .seccionModoMusica >button >span{
+        
+    }
+ */
+    /* CONTENIDO PRINCIPAL (MAIN) */
+    /* main{
+
+    } */
+
+    /*  PIE DE PAGINA */
+    footer >p{
+        font-size: 3rem;
+    }
+    
+}
+
+
+/*  MODO PC */
+@media (min-width:1023px){
+
+    /* CABECERA (HEADER) */
+    header >h1{
+        font-size: 6rem;
+        width: 45%;
+        margin: auto 0;
+    }
+    header >img{
+        width: 10%;
+        margin-left: 25%;
+    }
+
+    /* SECCION CAMBIO MODO CON MUSICA(SECTION) */
+    /* .seccionModoMusica >button >span{
+        
+    }
+ */
+    /* CONTENIDO PRINCIPAL (MAIN) */
+    main{overflow: auto;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 100% 100%;
+    }
+    /* main >section{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+    } */
+
+    /*  PIE DE PAGINA */
+    footer >p{
+        font-size: 3rem;
+    }
+    
+}
