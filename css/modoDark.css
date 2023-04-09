@@ -1,0 +1,30 @@
+.modoDark{
+    background-color: #191825;
+}
+
+/* CABECERA */
+.modoDark >header >h1{
+    color: white;
+    text-shadow: .1rem .7rem .8rem #E3F9F9;
+}
+.modoDark >header >img{
+    border:  .1rem solid white;
+    border-radius: 50%;
+}
+
+/* SECCION CAMBIO MODO CON MUSICA(SECTION) */
+.modoDark .seccionModoMusica{
+    border:  solid white;
+    background-color: #F3FEF3;
+}
+
+/* CONTENIDO PRINCIPAL (MAIN) */
+.modoDark >main >section{
+    background: #E3F9F9;
+    border: solid white;
+}
+
+/* PIE DE PAGINA (FOOTER) */
+.modoDark >footer{
+    background-color: #F3FEF3;
+}

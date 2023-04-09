@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    background-color: #F3FEF3;
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: 15% 10% 70% 5%;
+}
+
+
+/* CABECERA (HEADER) */
+header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 7%;
+}
+header >img{
+    width: 25%;
+    height: 100%;
+    border:  .1rem solid;
+    border-radius: 50%;
+}
+header >h1{
+    margin: auto;
+    padding-left: 2%;
+    width: 75%;
+    text-align: center;
+    font-size: 3.1rem;
+    letter-spacing: 5px;
+    text-shadow: .1rem .7rem .8rem black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* SECCION CAMBIO MODO CON MUSICA(SECTION) */
+.seccionModoMusica{
+    background-color: #E3F9F9;
+    margin-top: 1%;
+    border-bottom: .15rem solid;
+    border-top: .15rem solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.seccionModoMusica >button{
+    border: none;
+    background-color: transparent;
+}
+.seccionModoMusica >button >span{
+    font-weight: bold;
+    /* padding: 1%;
+    font-size: 2rem; */
+}
+
+/* CONTENIDO PRINCIPAL (MAIN) */
+main{
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    border-bottom: solid;
+}
+main >section{
+    width: 90%;
+    background-color: white;
+    height: 90%;
+    border: solid;
+    margin: calc(100% - 95%) auto;
+}
+
+/* PIE DE PAGINA (FOOTER) */
+footer{
+    background-color: #E3F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer >p{
+    font-size: 1.5rem;
+}
+
