@@ -8,11 +8,12 @@ html{
     height: 100%;
 }
 body{
+    overflow: hidden;
     min-height: 100%;
     background-color: #F3FEF3;
     font-weight: bold;
     display: grid;
-    grid-template-rows: 15% 10% 70% 5%;
+    grid-template-rows: 4% 3% 20% 2%;
 }
 
 
@@ -63,16 +64,28 @@ header >h1{
 /* CONTENIDO PRINCIPAL (MAIN) */
 main{
     overflow-y: auto;
-    height: 100%;
-    width: 100%;
+    overflow-x: hidden;
+    padding:  0 2%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100% 100%;
     border-bottom: solid;
 }
 main >section{
-    width: 90%;
+    width: auto;
     background-color: white;
-    height: 90%;
+    height: 98%;
     border: solid;
-    margin: calc(100% - 95%) auto;
+    margin: auto;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+main >section >iframe{
+    height: 100%;
+    width: auto;
+    /* border: solid;
+    border-radius: 1rem; */
 }
 
 /* PIE DE PAGINA (FOOTER) */
@@ -90,6 +103,13 @@ footer >p{
 /*  MODO TABLET */
 @media (min-width:767px) and (max-width:1023px){
 
+    body{
+        min-height: 100%;
+        background-color: #F3FEF3;
+        font-weight: bold;
+        display: grid;
+        grid-template-rows: 10% 5% 60% 5%;
+    }
     /* CABECERA (HEADER) */
     header >h1{
         font-size: 6rem;
@@ -101,9 +121,25 @@ footer >p{
     }
  */
     /* CONTENIDO PRINCIPAL (MAIN) */
-    /* main{
-
-    } */
+    main{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100% 100% 100% 100% 100% 100% 100%;
+    }
+    main >section {
+         height:95%;
+         width: 95%;
+         margin: auto;
+         border: solid;
+         border-radius: 1rem;
+     }
+    main >section >iframe{
+       /*  height: 100%; */
+        width: auto;
+       /*  margin: auto; */
+        
+    }
 
     /*  PIE DE PAGINA */
     footer >p{
@@ -115,6 +151,14 @@ footer >p{
 
 /*  MODO PC */
 @media (min-width:1023px){
+
+    body{
+        min-height: 100%;
+        background-color: #F3FEF3;
+        font-weight: bold;
+        display: grid;
+        grid-template-rows: 15% 10% 70% 5%;
+    }
 
     /* CABECERA (HEADER) */
     header >h1{
@@ -133,16 +177,21 @@ footer >p{
     }
  */
     /* CONTENIDO PRINCIPAL (MAIN) */
-    main{overflow: auto;
+    main{
+        
+        overflow-y: auto;
         display: grid;
-        grid-template-columns: 33.3% 33.3% 33.3%;
-        grid-template-rows: 100% 100%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 100% 100% 100%;
     }
-    /* main >section{
-        width: 90%;
+    main >section{
+        width: auto;
         height: 90%;
-        margin: auto;
-    } */
+       border-radius: 1rem;
+    }
+    main >section >iframe{
+        width: auto;
+    }
 
     /*  PIE DE PAGINA */
     footer >p{
